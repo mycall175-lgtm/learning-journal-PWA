@@ -38,20 +38,23 @@ export class MemStorage implements IStorage {
   }
 
   private seedData() {
-    const sampleReflections: InsertReflection[] = [
+    const sampleReflections: Reflection[] = [
       {
+        id: randomUUID(),
         name: "Student",
         date: "Mon Jan 13 2025",
         reflection: "This week I learned about HTML structure and semantic elements. I found it interesting how proper semantic HTML improves both accessibility and SEO. The most challenging part was understanding when to use section vs article elements.",
         week: 1,
       },
       {
+        id: randomUUID(),
         name: "Student",
         date: "Mon Jan 20 2025",
         reflection: "Explored CSS Flexbox and Grid layouts. Grid is incredibly powerful for creating complex layouts with minimal code. I spent extra time practicing media queries to ensure my Learning Journal is fully responsive across all device sizes.",
         week: 2,
       },
       {
+        id: randomUUID(),
         name: "Student",
         date: "Mon Jan 27 2025",
         reflection: "JavaScript DOM manipulation was the focus this week. I implemented a dynamic navigation menu and theme switcher. The event handling concepts finally clicked after building the form validation feature.",
@@ -60,12 +63,12 @@ export class MemStorage implements IStorage {
     ];
 
     sampleReflections.forEach((reflection) => {
-      const id = randomUUID();
-      this.reflections.set(id, { ...reflection, id });
+      this.reflections.set(reflection.id, reflection);
     });
 
-    const sampleProjects: InsertProject[] = [
+    const sampleProjects: Project[] = [
       {
+        id: randomUUID(),
         title: "Learning Journal PWA",
         description: "A Progressive Web App for documenting weekly learning reflections with offline support, installability, and dynamic data fetching.",
         technologies: ["HTML5", "CSS3", "JavaScript", "React", "PWA"],
@@ -74,6 +77,7 @@ export class MemStorage implements IStorage {
         date: "Jan 2025",
       },
       {
+        id: randomUUID(),
         title: "Responsive Portfolio",
         description: "A mobile-first responsive portfolio website showcasing projects and skills with CSS Grid and Flexbox layouts.",
         technologies: ["HTML5", "CSS3", "Flexbox", "Grid"],
@@ -82,6 +86,7 @@ export class MemStorage implements IStorage {
         date: "Dec 2024",
       },
       {
+        id: randomUUID(),
         title: "Theme Switcher Component",
         description: "A reusable dark/light mode toggle component using CSS custom properties and localStorage for persistence.",
         technologies: ["JavaScript", "CSS", "LocalStorage"],
@@ -90,6 +95,7 @@ export class MemStorage implements IStorage {
         date: "Nov 2024",
       },
       {
+        id: randomUUID(),
         title: "Flask REST API",
         description: "Backend API for the Learning Journal using Flask framework with JSON file storage for reflections data.",
         technologies: ["Python", "Flask", "REST API", "JSON"],
@@ -98,6 +104,7 @@ export class MemStorage implements IStorage {
         date: "Feb 2025",
       },
       {
+        id: randomUUID(),
         title: "Service Worker Demo",
         description: "Implementation of service workers for offline caching and background sync capabilities.",
         technologies: ["JavaScript", "Service Workers", "Cache API"],
@@ -106,6 +113,7 @@ export class MemStorage implements IStorage {
         date: "Mar 2025",
       },
       {
+        id: randomUUID(),
         title: "Form Validation Library",
         description: "A lightweight form validation library with custom rules and real-time feedback using the Validation API.",
         technologies: ["JavaScript", "Validation API", "DOM"],
@@ -116,8 +124,7 @@ export class MemStorage implements IStorage {
     ];
 
     sampleProjects.forEach((project) => {
-      const id = randomUUID();
-      this.projects.set(id, { ...project, id });
+      this.projects.set(project.id, project);
     });
   }
 
@@ -149,7 +156,10 @@ export class MemStorage implements IStorage {
   async createReflection(insertReflection: InsertReflection & { date: string }): Promise<Reflection> {
     const id = randomUUID();
     const reflection: Reflection = { 
-      ...insertReflection, 
+      name: insertReflection.name,
+      reflection: insertReflection.reflection,
+      week: insertReflection.week ?? null,
+      date: insertReflection.date,
       id,
     };
     this.reflections.set(id, reflection);
@@ -170,7 +180,15 @@ export class MemStorage implements IStorage {
 
   async createProject(insertProject: InsertProject): Promise<Project> {
     const id = randomUUID();
-    const project: Project = { ...insertProject, id };
+    const project: Project = { 
+      title: insertProject.title,
+      description: insertProject.description,
+      technologies: insertProject.technologies,
+      imageUrl: insertProject.imageUrl ?? null,
+      demoUrl: insertProject.demoUrl ?? null,
+      date: insertProject.date,
+      id,
+    };
     this.projects.set(id, project);
     return project;
   }
