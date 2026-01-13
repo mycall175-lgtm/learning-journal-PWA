@@ -41,21 +41,21 @@ export class MemStorage implements IStorage {
     const sampleReflections: Reflection[] = [
       {
         id: randomUUID(),
-        name: "Student",
+        name: "Mykel Yadav",
         date: "Mon Jan 13 2025",
         reflection: "This week I learned about HTML structure and semantic elements. I found it interesting how proper semantic HTML improves both accessibility and SEO. The most challenging part was understanding when to use section vs article elements.",
         week: 1,
       },
       {
         id: randomUUID(),
-        name: "Student",
+        name: "Mykel Yadav",
         date: "Mon Jan 20 2025",
         reflection: "Explored CSS Flexbox and Grid layouts. Grid is incredibly powerful for creating complex layouts with minimal code. I spent extra time practicing media queries to ensure my Learning Journal is fully responsive across all device sizes.",
         week: 2,
       },
       {
         id: randomUUID(),
-        name: "Student",
+        name: "Mykel Yadav",
         date: "Mon Jan 27 2025",
         reflection: "JavaScript DOM manipulation was the focus this week. I implemented a dynamic navigation menu and theme switcher. The event handling concepts finally clicked after building the form validation feature.",
         week: 3,

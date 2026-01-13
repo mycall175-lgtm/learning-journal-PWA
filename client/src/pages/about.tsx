@@ -38,8 +38,8 @@ const skills = [
 ];
 
 const contacts = [
-  { icon: Mail, label: "student@uca.ac.uk", href: "mailto:student@uca.ac.uk" },
-  { icon: Github, label: "github.com/student", href: "https://github.com" },
+  { icon: Mail, label: "m.yadav2321764@uca.ac.uk", href: "mailto:m.yadav2321764@uca.ac.uk" },
+  { icon: Github, label: "github.com/mykelyadav", href: "https://github.com" },
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
   { icon: MapPin, label: "Farnham, UK", href: null },
 ];
@@ -54,13 +54,13 @@ export default function About() {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <Avatar className="h-32 w-32 md:h-48 md:w-48 mx-auto md:mx-0">
                   <AvatarFallback className="text-4xl bg-primary/10 text-primary font-semibold">
-                    ST
+                    MY
                   </AvatarFallback>
                 </Avatar>
                 <div className="flex-1 text-center md:text-left">
-                  <h1 className="text-3xl md:text-4xl font-bold mb-2">Student Name</h1>
+                  <h1 className="text-3xl md:text-4xl font-bold mb-2">Mykel Yadav</h1>
                   <p className="text-lg text-muted-foreground mb-4">
-                    BSc (Hons) Computer Science Student
+                    BSc (Hons) Computer Science Student | ID: 2321764
                   </p>
                   <div className="flex items-center justify-center md:justify-start gap-2 text-muted-foreground mb-6">
                     <GraduationCap className="h-5 w-5" />
