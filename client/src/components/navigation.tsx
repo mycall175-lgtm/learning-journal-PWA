@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, BookOpen, Home, User, FolderKanban, Download } from "lucide-react";
+import { Menu, X, BookOpen, Home, User, FolderKanban, Download, Gamepad2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
@@ -9,6 +9,7 @@ const navItems = [
   { href: "/", label: "Home", icon: Home },
   { href: "/journal", label: "Journal", icon: BookOpen },
   { href: "/projects", label: "Projects", icon: FolderKanban },
+  { href: "/game", label: "Game", icon: Gamepad2 },
   { href: "/about", label: "About", icon: User },
 ];
 
