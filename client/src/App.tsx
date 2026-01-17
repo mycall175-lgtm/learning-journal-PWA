@@ -39,9 +39,14 @@ function AppLayout() {
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch((error) => {
-        console.log("Service Worker registration failed:", error);
-      });
+      navigator.serviceWorker.register("/sw.js", { updateViaCache: 'none' })
+        .then((registration) => {
+          console.log("Service Worker registered successfully");
+          registration.update();
+        })
+        .catch((error) => {
+          console.log("Service Worker registration failed:", error);
+        });
     }
 
     const handleBeforeInstallPrompt = (e: Event) => {
