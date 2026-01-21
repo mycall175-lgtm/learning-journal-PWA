@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, BookOpen, Home, User, FolderKanban, Download, Gamepad2 } from "lucide-react";
+import { Menu, X, BookOpen, Home, User, FolderKanban, Download, Gamepad2, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { ThemeToggle } from "./theme-toggle";
@@ -11,6 +11,7 @@ const navItems = [
   { href: "/journal", label: "Journal", icon: BookOpen },
   { href: "/projects", label: "Projects", icon: FolderKanban },
   { href: "/game", label: "Game", icon: Gamepad2 },
+  { href: "/portfolio", label: "Portfolio", icon: FileText },
   { href: "/about", label: "About", icon: User },
 ];
 

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "b20e0cd8-bfec-41f0-9678-b25774e39135",
+    "title": "Learning Journal PWA",
+    "description": "A Progressive Web App for documenting weekly learning reflections with offline support, installability, and dynamic data fetching.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "PWA"
+    ],
+    "imageUrl": null,
+    "demoUrl": "/",
+    "date": "Jan 2025"
+  },
+  {
+    "id": "3dd7bee9-cb79-487a-ad7d-43c3ded56501",
+    "title": "Responsive Portfolio",
+    "description": "A mobile-first responsive portfolio website showcasing projects and skills with CSS Grid and Flexbox layouts.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Flexbox",
+      "Grid"
+    ],
+    "imageUrl": null,
+    "demoUrl": null,
+    "date": "Dec 2024"
+  },
+  {
+    "id": "e8c224d3-fcd7-4537-bac9-a0384134036a",
+    "title": "Theme Switcher Component",
+    "description": "A reusable dark/light mode toggle component using CSS custom properties and localStorage for persistence.",
+    "technologies": [
+      "JavaScript",
+      "CSS",
+      "LocalStorage"
+    ],
+    "imageUrl": null,
+    "demoUrl": null,
+    "date": "Nov 2024"
+  },
+  {
+    "id": "120ff94a-a1f5-4126-aa23-43c15b85cdfe",
+    "title": "Flask REST API",
+    "description": "Backend API for the Learning Journal using Flask framework with JSON file storage for reflections data.",
+    "technologies": [
+      "Python",
+      "Flask",
+      "REST API",
+      "JSON"
+    ],
+    "imageUrl": null,
+    "demoUrl": null,
+    "date": "Feb 2025"
+  },
+  {
+    "id": "a29743e2-3f08-41ae-8c62-7a8969d845b1",
+    "title": "Service Worker Demo",
+    "description": "Implementation of service workers for offline caching and background sync capabilities.",
+    "technologies": [
+      "JavaScript",
+      "Service Workers",
+      "Cache API"
+    ],
+    "imageUrl": null,
+    "demoUrl": null,
+    "date": "Mar 2025"
+  },
+  {
+    "id": "a451c7fb-2492-4063-a198-e2e8a0c219ee",
+    "title": "Form Validation Library",
+    "description": "A lightweight form validation library with custom rules and real-time feedback using the Validation API.",
+    "technologies": [
+      "JavaScript",
+      "Validation API",
+      "DOM"
+    ],
+    "imageUrl": null,
+    "demoUrl": null,
+    "date": "Oct 2024"
+  }
+]

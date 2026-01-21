@@ -13,6 +13,7 @@ import Journal from "@/pages/journal";
 import Projects from "@/pages/projects";
 import About from "@/pages/about";
 import Game from "@/pages/game";
+import Portfolio from "@/pages/portfolio";
 import NotFound from "@/pages/not-found";
 
 interface BeforeInstallPromptEvent extends Event {
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/journal" component={Journal} />
       <Route path="/projects" component={Projects} />
       <Route path="/game" component={Game} />
+      <Route path="/portfolio" component={Portfolio} />
       <Route path="/about" component={About} />
       <Route component={NotFound} />
     </Switch>
