@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { StatCard } from "@/components/stat-card";
 import { ReflectionCard } from "@/components/reflection-card";
 import { StatCardSkeleton, ReflectionCardSkeleton } from "@/components/skeleton-card";
+import { QuoteCard } from "@/components/quote-card";
 import type { Reflection } from "@shared/schema";
 
 export default function Home() {
@@ -56,6 +57,13 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+      </section>
+
+      <section className="py-12 md:py-16">
+        <div className="mx-auto max-w-4xl px-4">
+          <h2 className="text-xl font-semibold mb-4 text-center">Daily Inspiration</h2>
+          <QuoteCard />
+        </div>
       </section>
 
       <section className="py-16 md:py-24">
