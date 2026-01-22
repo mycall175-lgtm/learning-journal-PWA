@@ -4,3 +4,16 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Replit specific
+.replit
+.cache
+.local
+.upm
+.pythonlibs
+replit.md
+
+# Python
+__pycache__
+*.pyc
+.env
